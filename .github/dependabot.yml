@@ -2,7 +2,7 @@ version: 2
 updates:
   # Configuration for Dockerfile
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/web-app/"
     schedule:
       interval: "weekly"
       # Disable all pull requests for Docker dependencies
@@ -10,7 +10,7 @@ updates:
 
   # Configuration for npm
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/web-app/"
     schedule:
       interval: "weekly"
     ignore:
